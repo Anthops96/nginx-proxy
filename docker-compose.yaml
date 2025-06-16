@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  nginx-proxy:
+    build: ./nginx
+    container_name: nginx-proxy
+    ports:
+      - "443:443"
+      - "80:80"
+    networks:
+      - proxy-network
+    restart: unless-stopped
+
+networks:
+  proxy-network:
+    driver: bridge
