@@ -16,7 +16,8 @@ nginx proxy and loadbalancer
 ```
 
 
-Self signed certificate generation
+### Self signed certificate generation
+
 ```bash
 mkdir -p nginx/ssl
 cd nginx/ssl
@@ -39,7 +40,7 @@ rm server.csr
 ```
 
 
-Create and configure the needed files and start the container.
+### Create and configure the needed files and start the container.
 
 ```bash
 nano nginx.conf # Nginx configuration file
